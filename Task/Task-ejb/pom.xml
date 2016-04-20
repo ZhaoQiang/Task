@@ -3,11 +3,11 @@
     <modelVersion>4.0.0</modelVersion>
     <parent>
     <artifactId>Task</artifactId>
-    <groupId>com.rrgame</groupId>
+    <groupId>com.rrsoftware</groupId>
     <version>1.0-SNAPSHOT</version>
   </parent>
 
-    <groupId>com.rrgame</groupId>
+    <groupId>com.rrsoftware</groupId>
     <artifactId>Task-ejb</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>ejb</packaging>
