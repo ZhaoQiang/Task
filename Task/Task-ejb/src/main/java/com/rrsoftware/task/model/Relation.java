@@ -10,15 +10,15 @@ package com.rrsoftware.task.model;
  * @author Zhao Qiang <zhaoqiang@rrsoftware.com>
  */
 public class Relation {
-    private Model modelA;
-    private Model modelB;
+    private ModelTemplete modelA;
+    private ModelTemplete modelB;
     private String nameForA;
     private String nameForB;
     
     public Relation()
     {}
     
-    public static Relation createRelation(Model modelA, Model modelB, String nameForA, String nameForB)
+    public static Relation createRelation(ModelTemplete modelA, ModelTemplete modelB, String nameForA, String nameForB)
     {
         Relation relation = new Relation();
         relation.setModelA(modelA);
@@ -37,19 +37,19 @@ public class Relation {
         return relation;
     }
     
-    public Model getModelA() {
+    public ModelTemplete getModelA() {
         return modelA;
     }
 
-    public void setModelA(Model modelA) {
+    public void setModelA(ModelTemplete modelA) {
         this.modelA = modelA;
     }
 
-    public Model getModelB() {
+    public ModelTemplete getModelB() {
         return modelB;
     }
 
-    public void setModelB(Model modelB) {
+    public void setModelB(ModelTemplete modelB) {
         this.modelB = modelB;
     }
     

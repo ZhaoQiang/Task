@@ -11,8 +11,14 @@ package com.rrsoftware.task.model.field;
  */
 public class IntField extends Field{
 
-        private int value;
+    private int value;
 
+    public IntField(String name, int value)
+    {
+        super(name);
+        this.value = value;
+    }
+        
     /**
      * Get the value of value
      *

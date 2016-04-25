@@ -12,6 +12,12 @@ package com.rrsoftware.task.model.field;
 public class StringField extends Field{
     
     private String value;
+    
+    public StringField(String name, String value)
+    {
+        super(name);
+        this.value = value;
+    }
 
     public String getValue() {
         return value;

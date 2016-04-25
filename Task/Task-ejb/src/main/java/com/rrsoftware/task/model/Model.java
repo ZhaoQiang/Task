@@ -5,8 +5,12 @@
  */
 package com.rrsoftware.task.model;
 
+import com.rrsoftware.task.model.field.DateField;
 import com.rrsoftware.task.model.field.Field;
+import com.rrsoftware.task.model.field.IntField;
+import com.rrsoftware.task.model.field.StringField;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Objects;
@@ -19,47 +23,14 @@ import java.util.UUID;
 public class Model {
     
     private final UUID uid = UUID.randomUUID();
-    private final HashMap<String, List<Relation>> relationMap = new HashMap<>();
-    private final HashMap<String, List<Field>> fieldMap = new HashMap<>();
+
     
     public Model()
     {
+        
     }
     
-    public void addRelation(String name, Relation relation)
-    {
-        List<Relation> relationList = relationMap.get(name);
-        if (relationList == null)
-        {
-            relationList = new ArrayList<>();
-            relationMap.put(name, relationList);
-        }
-        relationList.add(relation);
-    }
-    
-    public List<Relation> findRelationList(String name)
-    {
-        return relationMap.get(name);
-    }
-    
-    public void addField(Field field)
-    {
-        List<Field> fieldList = fieldMap.get(field.getName());
-        if (fieldList == null)
-        {
-            fieldList = new ArrayList<>();
-            fieldMap.put(field.getName(), fieldList);
-        }
-        fieldList.add(field);
-        fieldMap.put(field.getName(), fieldList);
-    }
-    
-    public List<Field> getFieldList(String name)
-    {
-        return fieldMap.get(name);
-    }
-    
-    
+  
     
     @Override
     public boolean equals(Object obj) {

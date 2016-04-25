@@ -14,7 +14,13 @@ import java.util.Date;
 public class DateField extends Field{
     
     private Date value;
-
+    
+    public DateField(String name, Date value)
+    {
+        super(name);
+        this.value = value;
+    }
+    
     /**
      * Get the value of value
      *
