@@ -42,13 +42,13 @@
     </build>
     <dependencies>
         <dependency>
-            <groupId>com.rrgame</groupId>
+            <groupId>com.rrsoftware</groupId>
             <artifactId>Task-ejb</artifactId>
             <version>1.0-SNAPSHOT</version>
             <type>ejb</type>
         </dependency>
         <dependency>
-            <groupId>com.rrgame</groupId>
+            <groupId>com.rrsoftware</groupId>
             <artifactId>Task-web</artifactId>
             <version>1.0-SNAPSHOT</version>
             <type>war</type>

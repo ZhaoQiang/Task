@@ -20,5 +20,9 @@ public interface ModelTempleteControllerLocal {
     public ModelTemplete getTemplete();
 
     public void setTemplete(ModelTemplete templete);
+
+    String getName();
+
+    void setName(String name);
     
 }

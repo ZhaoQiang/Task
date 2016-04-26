@@ -37,4 +37,28 @@ public class ModelTempleteController implements ModelTempleteControllerLocal {
         this.templete = templete;
     }
 
+    @Override
+    public String getName() {
+        return "HELLO!";
+        /*
+        if (templete != null)
+        {
+            return templete.getName();
+        }
+        return "NO-NAME";
+*/
+    }
+
+    @Override
+    public void setName(String name) {
+        if (templete != null)
+        {
+            templete.setName(name);
+        }
+    }
+    
+    
+    
+    
+
 }

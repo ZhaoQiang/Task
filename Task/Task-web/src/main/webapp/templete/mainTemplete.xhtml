@@ -6,24 +6,25 @@
       xmlns:p="http://primefaces.org/ui">
     <h:head>
         <ui:insert name="header"> header </ui:insert>
+        <h:outputStylesheet library="css" name="main.css"/>
     </h:head>
     
     <h:body>
         <p:layout fullPage="true">
             
-            <p:layoutUnit position="north">
+            <p:layoutUnit position="north" minSize="55">
                 <ui:insert name="logo">logo</ui:insert>
-                <div style="float: right">
-                    <ui:insert name="topMenu"> topMenu</ui:insert>
-                </div>
+                <p:spacer width="5"/>
+                <ui:insert name="title">Title</ui:insert>
             </p:layoutUnit>
             
             
-            <p:layoutUnit position ="west">
+            <p:layoutUnit position ="west" resizable="true" collapsible="true" minSize="150">
                 <ui:insert name="sideMenu">sideMenu</ui:insert>
             </p:layoutUnit>
             
             <p:layoutUnit position = "center">
+                <ui:insert name="topMenu"> topMenu</ui:insert>
                 <ui:insert name="content">content</ui:insert>
             </p:layoutUnit>
             
