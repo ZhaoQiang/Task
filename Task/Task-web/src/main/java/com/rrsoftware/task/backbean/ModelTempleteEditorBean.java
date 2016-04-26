@@ -12,6 +12,8 @@ import javax.enterprise.context.ConversationScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
 import com.rrsoftware.task.controller.ModelTempleteControllerLocal;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 /**
@@ -22,6 +24,7 @@ import com.rrsoftware.task.controller.ModelTempleteControllerLocal;
 @ConversationScoped
 public class ModelTempleteEditorBean implements Serializable{
 
+    private static Logger logger = Logger.getLogger("ModelTempleteEditorBean");
     @Inject
     private Conversation conversation;
     
@@ -46,6 +49,7 @@ public class ModelTempleteEditorBean implements Serializable{
     
     public ModelTempleteControllerLocal getController()
     {
+        logger.log(Level.WARNING, "get controller");
         return modelTempleteController;
     }
     
