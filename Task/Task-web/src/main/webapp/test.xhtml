@@ -3,23 +3,21 @@
 <ui:composition
     xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
     template="templete/mainTemplete.xhtml"
-    xmlns:h="http://xmlns.jcp.org/jsf/html"
-    xmlns:my="http://java.sun.com/jsf/composite/component">
-    
+    xmlns:h="http://xmlns.jcp.org/jsf/html">
     <ui:define name="logo">
-        <i class="fa fa-cog fa-spin fa-3x fa-fw" aria-hidden="true"></i>
+        <i class="fa fa-bar-chart fa-3x" aria-hidden="true"></i>
     </ui:define>
-    
     <ui:define name="title">
-        <h:outputText value="#{msg['modelTempleteEditor.title']}"/>
+        #{msg.test}
     </ui:define>
-    
     <ui:define name="content">
-        <my:modelTempleteComponent controller="#{modelTempleteEditorBean.controller}"/>
+        <h1>h1: #{msg.testMessage} </h1>
+        <h2>h2: #{msg.testMessage} </h2>
+        <h3>h3: #{msg.testMessage} </h3>
+        <h4>h4: #{msg.testMessage} </h4>
+        <h5>h5: #{msg.testMessage} </h5>
         
+        <h:outputText value="outputText: #{msg.testMessage}"/>
     </ui:define>
-    
 </ui:composition>
-
-
 

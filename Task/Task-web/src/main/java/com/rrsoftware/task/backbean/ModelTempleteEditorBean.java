@@ -30,6 +30,14 @@ public class ModelTempleteEditorBean implements Serializable{
     
     @EJB
     private ModelTempleteControllerLocal modelTempleteController;
+
+    public ModelTempleteControllerLocal getModelTempleteController() {
+        return modelTempleteController;
+    }
+
+    public void setModelTempleteController(ModelTempleteControllerLocal modelTempleteController) {
+        this.modelTempleteController = modelTempleteController;
+    }
     
     /**
      * Creates a new instance of ModelTempleteEditorBean
