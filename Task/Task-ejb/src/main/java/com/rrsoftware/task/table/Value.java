@@ -14,6 +14,16 @@ public class Value {
     public static String NUMBER_TYPE = "number";
     public static String DATE_TYPE = "date";
     
+    private String name;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+    
     
     
 }

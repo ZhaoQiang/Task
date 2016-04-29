@@ -12,5 +12,18 @@ import java.util.HashMap;
  * @author Zhao Qiang <zhaoqiang@rrsoftware.com>
  */
 public class Row {
-        private HashMap<String, Value> values = new HashMap<>();
+    private HashMap<String, Value> values = new HashMap<>();
+    
+    public void setValue(String key, Value value)
+    {
+        values.put(key, value);
+    }
+    
+    public Value getValue(String key)
+    {
+        return values.get(key);
+    }
+    
+    
+    
 }
